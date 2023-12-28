@@ -45,7 +45,7 @@
     <main>
         <h1>Professional experience</h1>
         <div class="card-container">
-            <section class="cards">
+            <section class="cards main-card1">
                 <h3>Graduated as Electronics and Communications Technician</h3>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-award" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#556b2f" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -56,7 +56,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quasi nesciunt corporis quas, cupiditate nostrum eum molestiae magni aut aperiam pariatur sint possimus fuga dolorum vero fugiat est similique a!</p>
             </section>
         
-            <section class="cards">
+            <section class="cards main-card2">
                 <h3>Web Development</h3>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#556b2f" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -66,7 +66,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates voluptatibus voluptatum unde, dolores ullam nobis iure nesciunt quaerat, quo nulla nemo pariatur sapiente laudantium quisquam modi similique tempore sint reprehenderit!</p>
             </section>
 
-            <section class="cards">
+            <section class="cards main-card3">
                 <h3>Object Oriented Programming</h3>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#556b2f" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -78,7 +78,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nobis officia iusto nesciunt rerum perspiciatis sed quam voluptatibus consequuntur blanditiis quidem optio repellat deleniti nisi dolores esse fuga sapiente quas?</p>    
             </section>
         
-            <section class="cards">
+            <section class="cards main-card4">
                 <h3>Embedded Systems Programming</h3>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices-pc" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#556b2f" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -93,33 +93,34 @@
             </section>
         </div>
         <!-- FORMULARIO -->
-        <section id="contact" class="form">
+        <section id="contact" class="form" >
             <h2>Contact</h2>
-            <form action="">
+            <form action="register.php" method="post">
                 <fieldset>
                     <legend>Please fill every space in order to communicate with me!</legend>
                     <div class="fields">
                         <label for="">Name</label>
-                        <input type="text" name="" id="" placeholder="Ex. John Matthews">
+                        <input type="text" name="name" id="" placeholder="Ex. John Matthews">
                     </div>
                     
                     <div class="fields">
                         <label for="">Phone number</label>
-                        <input type="tel" name="" id="" placeholder="XXXXXXX">
+                        <input type="tel" name="phone" id="" placeholder="XXXXXXX">
                     </div>
 
                     <div class="fields">
                         <label for="">Email</label>
-                        <input type="email" name="" id="" placeholder="example@domain.com">
+                        <input type="email" name="email" id="" placeholder="example@domain.com">
                     </div>
                     
                     <div class="fields">
                         <label for="">Message</label>
-                        <textarea placeholder="Leave a message here"></textarea>
+                        <textarea placeholder="Leave a message here" name="comments"></textarea>
                     </div>
 
                     <div class="button">
-                        <a href="#">Send!</a>
+                        <!-- <a href="#">Send!</a> -->
+                        <input type="submit" value="Send!">
                     </div>
                 </fieldset>
             </form>
